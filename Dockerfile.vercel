@@ -1,0 +1,30 @@
+# Build the Spring Boot application
+FROM eclipse-temurin:26-jdk-alpine AS build
+
+WORKDIR /app
+
+COPY gradlew .
+COPY gradle gradle
+COPY build.gradle settings.gradle ./
+
+RUN chmod +x gradlew
+
+COPY src src
+
+RUN ./gradlew bootJar --no-daemon && \
+    JAR_FILE=$(find build/libs -type f -name "*.jar" ! -name "*-plain.jar" | head -n 1) && \
+    cp "$JAR_FILE" app.jar
+
+
+# Run the application
+FROM eclipse-temurin:26-jre-alpine
+
+WORKDIR /app
+
+ENV PORT=80
+
+COPY --from=build /app/app.jar app.jar
+
+EXPOSE 80
+
+ENTRYPOINT ["java", "-jar", "app.jar"]
