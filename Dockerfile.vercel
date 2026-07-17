@@ -27,4 +27,4 @@ COPY --from=build /app/app.jar /app/app.jar
 
 EXPOSE 80
 
-CMD ["java", "-jar", "/app/app.jar"]git
+CMD ["java", "-jar", "/app/app.jar"]
