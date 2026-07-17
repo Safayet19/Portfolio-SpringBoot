@@ -1,12 +1,22 @@
-# Safayet Ullah — Portfolio
+# Portfolio Project
 
-Personal portfolio website of **Safayet Ullah**, an AI researcher, Java developer, and cybersecurity enthusiast.
+A modern responsive portfolio project built with Java, Spring Boot, Thymeleaf, HTML, CSS, and JavaScript.
 
-The portfolio presents my research work, software projects, technical skills, education, experience, and professional certifications.
+This portfolio website includes project showcases, research work, education, experience, certifications, skills, and a contact form.
+
+## Features
+
+- Responsive portfolio design
+- Projects and research sections
+- Skills, education, and experience
+- Certificate gallery
+- Spring Boot contact form
+- Mobile-friendly interface
+- Custom CSS animations
 
 ## Technologies
 
-Spring Boot, Java, Thymeleaf, HTML, CSS, JavaScript, Gradle, and Docker.
+Java, Spring Boot, Thymeleaf, HTML5, CSS3, JavaScript, Gradle, Docker
 
 ## Run Locally
 
