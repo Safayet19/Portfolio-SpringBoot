@@ -1,0 +1,18 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07122F"/><stop offset="0.45" stop-color="#0E2A63"/><stop offset="1" stop-color="#35106E"/>
+    </linearGradient>
+    <linearGradient id="line" x1="240" y1="130" x2="1040" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00D9FF"/><stop offset="0.5" stop-color="#746BFF"/><stop offset="1" stop-color="#FF4FD8"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="8" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1030" cy="120" r="190" fill="#00D9FF" opacity="0.12"/>
+  <circle cx="260" cy="610" r="220" fill="#FF4FD8" opacity="0.12"/>
+  <path d="M240 480 C430 250, 580 240, 760 380 S1010 500, 1080 250" stroke="url(#line)" stroke-width="6" fill="none" opacity="0.45"/>
+  <rect x="220" y="160" width="840" height="400" rx="38" fill="rgba(255,255,255,0.08)" stroke="url(#line)" stroke-width="3"/>
+  <text x="640" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="54" font-weight="800" fill="#FFFFFF">PROJECT PREVIEW</text>
+  <text x="640" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#AEEBFF">Safayet Ullah Portfolio</text>
+</svg>
