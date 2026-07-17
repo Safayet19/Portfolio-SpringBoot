@@ -27,4 +27,4 @@ COPY --from=build /app/app.jar app.jar
 
 EXPOSE 80
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+CMD ["sh", "-c", "java -Dserver.address=0.0.0.0 -Dserver.port=${PORT:-80} -jar app.jar"]
