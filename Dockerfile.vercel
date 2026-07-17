@@ -26,4 +26,4 @@ COPY --from=build /app/app.jar app.jar
 
 EXPOSE 80
 
-CMD ["java", "-jar", "app.jar"]
+CMD ["sh", "-c", "echo 'CONTAINER STARTED'; java -version; ls -lh /app/app.jar; exec java -jar /app/app.jar"]
